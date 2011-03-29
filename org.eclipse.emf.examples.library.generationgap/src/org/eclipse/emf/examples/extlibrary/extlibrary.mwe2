@@ -1,0 +1,24 @@
+module org.eclipsecon.demo.emf.generationgap
+
+import org.eclipse.emf.mwe.utils.*
+import org.eclipse.emf.mwe2.ecore.*
+
+var projectName = "org.eclipse.emf.examples.library.generationgap"
+var runtimeProject = "${projectName}"
+
+Workflow {
+	bean = StandaloneSetup {
+		platformUri = ".."
+	}
+
+	component = DirectoryCleaner {
+		directory = "${runtimeProject}/src-gen"
+	}
+	
+	component = EcoreGenerator {
+		srcPath = "platform:/resource/${runtimeProject}/src"
+		genModel = "platform:/resource/${runtimeProject}/model/extlibrary.genmodel"
+		
+	}
+}
+

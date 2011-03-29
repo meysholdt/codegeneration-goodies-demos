@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.eclipse.emf.examples.xmlgen/src-gen"
+    modelPluginID="org.eclipse.emf.examples.xmlgen" modelName="Rss-2" importerID="org.eclipse.xsd.ecore.importer"
+    complianceLevel="5.0" copyrightFields="false">
+  <foreignModel>rss-2.0.xsd</foreignModel>
+  <genPackages prefix="Rss20" basePackage="org.eclipse.emf.examples.xmlgen" resource="XML"
+      disposableProviderFactory="true" ecorePackage="Rss20.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="Rss20.ecore#//CloudProtocol">
+      <genEnumLiterals ecoreEnumLiteral="Rss20.ecore#//CloudProtocol/xmlRpc"/>
+      <genEnumLiterals ecoreEnumLiteral="Rss20.ecore#//CloudProtocol/httpPost"/>
+      <genEnumLiterals ecoreEnumLiteral="Rss20.ecore#//CloudProtocol/soap"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="Rss20.ecore#//SkipDay">
+      <genEnumLiterals ecoreEnumLiteral="Rss20.ecore#//SkipDay/Monday"/>
+      <genEnumLiterals ecoreEnumLiteral="Rss20.ecore#//SkipDay/Tuesday"/>
+      <genEnumLiterals ecoreEnumLiteral="Rss20.ecore#//SkipDay/Wednesday"/>
+      <genEnumLiterals ecoreEnumLiteral="Rss20.ecore#//SkipDay/Thursday"/>
+      <genEnumLiterals ecoreEnumLiteral="Rss20.ecore#//SkipDay/Friday"/>
+      <genEnumLiterals ecoreEnumLiteral="Rss20.ecore#//SkipDay/Saturday"/>
+      <genEnumLiterals ecoreEnumLiteral="Rss20.ecore#//SkipDay/Sunday"/>
+    </genEnums>
+    <genDataTypes ecoreDataType="Rss20.ecore#//CloudProtocolObject"/>
+    <genDataTypes ecoreDataType="Rss20.ecore#//EmailAddress"/>
+    <genDataTypes ecoreDataType="Rss20.ecore#//ImageHeight"/>
+    <genDataTypes ecoreDataType="Rss20.ecore#//ImageWidth"/>
+    <genDataTypes ecoreDataType="Rss20.ecore#//Rfc822FormatDate"/>
+    <genDataTypes ecoreDataType="Rss20.ecore#//SkipDayObject"/>
+    <genDataTypes ecoreDataType="Rss20.ecore#//SkipHour"/>
+    <genClasses ecoreClass="Rss20.ecore#//Category">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//Category/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//Category/domain"/>
+    </genClasses>
+    <genClasses ecoreClass="Rss20.ecore#//Cloud">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//Cloud/domain"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//Cloud/path"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//Cloud/port"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//Cloud/protocol"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//Cloud/registerProcedure"/>
+    </genClasses>
+    <genClasses ecoreClass="Rss20.ecore#//DocumentRoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//DocumentRoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Rss20.ecore#//DocumentRoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Rss20.ecore#//DocumentRoot/xSISchemaLocation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Rss20.ecore#//DocumentRoot/rss"/>
+    </genClasses>
+    <genClasses ecoreClass="Rss20.ecore#//Enclosure">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//Enclosure/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//Enclosure/length"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//Enclosure/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//Enclosure/url"/>
+    </genClasses>
+    <genClasses ecoreClass="Rss20.ecore#//Guid">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//Guid/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//Guid/isPermaLink"/>
+    </genClasses>
+    <genClasses ecoreClass="Rss20.ecore#//Image">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//Image/url"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//Image/title"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//Image/link"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//Image/width"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//Image/height"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//Image/description"/>
+    </genClasses>
+    <genClasses ecoreClass="Rss20.ecore#//RssChannel">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute Rss20.ecore#//RssChannel/group"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//RssChannel/title"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//RssChannel/link"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//RssChannel/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//RssChannel/language"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//RssChannel/copyright"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//RssChannel/managingEditor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//RssChannel/webMaster"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//RssChannel/pubDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//RssChannel/lastBuildDate"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Rss20.ecore#//RssChannel/category"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//RssChannel/generator"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//RssChannel/docs"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Rss20.ecore#//RssChannel/cloud"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//RssChannel/ttl"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Rss20.ecore#//RssChannel/image"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//RssChannel/rating"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Rss20.ecore#//RssChannel/textInput"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Rss20.ecore#//RssChannel/skipHours"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Rss20.ecore#//RssChannel/skipDays"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//RssChannel/any"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Rss20.ecore#//RssChannel/item"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute Rss20.ecore#//RssChannel/any1"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute Rss20.ecore#//RssChannel/anyAttribute"/>
+    </genClasses>
+    <genClasses ecoreClass="Rss20.ecore#//RssItem">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute Rss20.ecore#//RssItem/group"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//RssItem/title"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//RssItem/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//RssItem/link"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//RssItem/author"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Rss20.ecore#//RssItem/category"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//RssItem/comments"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Rss20.ecore#//RssItem/enclosure"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Rss20.ecore#//RssItem/guid"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//RssItem/pubDate"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Rss20.ecore#//RssItem/source"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//RssItem/any"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute Rss20.ecore#//RssItem/anyAttribute"/>
+    </genClasses>
+    <genClasses ecoreClass="Rss20.ecore#//RssType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Rss20.ecore#//RssType/channel"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute Rss20.ecore#//RssType/any"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//RssType/version"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute Rss20.ecore#//RssType/anyAttribute"/>
+    </genClasses>
+    <genClasses ecoreClass="Rss20.ecore#//SkipDaysList">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//SkipDaysList/day"/>
+    </genClasses>
+    <genClasses ecoreClass="Rss20.ecore#//SkipHoursList">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//SkipHoursList/hour"/>
+    </genClasses>
+    <genClasses ecoreClass="Rss20.ecore#//Source">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//Source/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//Source/url"/>
+    </genClasses>
+    <genClasses ecoreClass="Rss20.ecore#//TextInput">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//TextInput/title"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//TextInput/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//TextInput/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Rss20.ecore#//TextInput/link"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
