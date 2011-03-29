@@ -1,6 +1,8 @@
 This repository contains the source code of the demos that I showed in my
 talk "Codegeneration Goodies" at the EclipseCon 2011 conference in Santa
-Clara. 
+Clara.
+
+The source has been tested with EMF 2.6 and Xtext 2.0 M6. 
 
 For the description of the talk, see
 http://www.eclipsecon.org/2011/sessions/?page=sessions&id=2253
